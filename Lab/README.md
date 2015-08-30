@@ -4,17 +4,21 @@
 ##### 1. 註冊 MCS 帳號並登入
 前往 [MCS 註冊頁面](https://mcs.mediatek.com/oauth/zh-TW/signup) 申請一個帳號
 
+---
+
 ##### 2. 建立產品原型
 - 點擊畫面上方的 開發
-- 在產品原型清單頁面中，點擊創建按鈕來新增一個新的產品原型。
+- 在產品原型清單頁面中，點擊創建按鈕來新增一個新的產品原型
 
 ![](https://img.mediatek.com/1500/mtk.linkit/mcs-resources/zh-TW/2.8.5/LinkIt_Connect/img_linkitconnect7681_01.png)
 
-- 輸入自訂產品原型名稱，版本，並選擇產業別。硬體平台請選擇 MT7681，之後點擊儲存按鈕。
+- 輸入自訂產品原型名稱，版本，並選擇產業別。硬體平台請選擇 MT7681，之後點擊儲存按鈕
 ![](https://img.mediatek.com/1500/mtk.linkit/mcs-resources/zh-TW/2.8.5/LinkIt_Connect/img_linkitconnect7681_02.png)
 
+---
+
 ##### 3. 為產品原型建立資料通道
-- 點擊剛新建好的產品原型下方的詳情按鈕。
+- 點擊剛新建好的產品原型下方的詳情按鈕
 ![](https://img.mediatek.com/1500/mtk.linkit/mcs-resources/zh-TW/2.8.5/LinkIt_Connect/img_linkitconnect7681_03.png)
 
 - 點擊資料通道分頁，並點擊新增按鈕。
@@ -24,6 +28,8 @@
 ![](https://img.mediatek.com/1500/mtk.linkit/mcs-resources/zh-TW/2.8.5/LinkIt_Connect/img_linkitconnect7681_06.png)
 
 - 接著以同樣步驟新增第二個資料通道，這次資料通道 ID 請輸入 `GPIO_01`，資料通道名稱輸入 `GPIO 01` ，選擇 GPIO 資料型態並儲存
+
+---
 
 ##### 4. 更新晶片上的韌體
 - 將晶片以 Micro-USB 傳輸線連接至電腦
@@ -40,6 +46,8 @@
 
 ![](http://i.imgur.com/hpMdBDo.png)
 
+---
+
 #### 5. 進行 Smart Connection
 - 此步驟會透過 Android 手機將實體晶片與前面在 MCS 所建立的原型連接在一起，讓我們能夠直接透過網路來控制晶片動作
 
@@ -53,3 +61,27 @@
 - 開啟 APP 登入後，點選下方的新增按鈕
 
 ![](https://img.mediatek.com/1500/mtk.linkit/mcs-resources/zh-TW/2.8.5/LinkIt_Connect/img_linkitconnect7681_09.png)
+
+- 點擊畫面下方的 Smart Connection 按鈕
+
+![](https://img.mediatek.com/1500/mtk.linkit/mcs-resources/zh-TW/2.8.5/LinkIt_Connect/img_linkitconnect7681_10.png)
+
+- 輸入無線網路的 SSID 和密碼後點選開始。正常情況下，SSID 會自動帶入手機所連線至的無線網路
+
+![](https://img.mediatek.com/1500/mtk.linkit/mcs-resources/zh-TW/2.8.5/LinkIt_Connect/img_linkitconnect7681_11.png)
+
+- 等待幾秒後，如果 Smart Connection 成功，將會看到晶片出現在列表上，找到 MAC Address 對應的晶片並點選
+
+![](https://img.mediatek.com/1500/mtk.linkit/mcs-resources/zh-TW/2.8.5/LinkIt_Connect/img_linkitconnect7681_13.png)
+
+- 選取剛剛在網站新增的原型
+
+![](https://img.mediatek.com/1500/mtk.linkit/mcs-resources/zh-TW/2.8.5/LinkIt_Connect/img_linkitconnect7681_14.png)
+
+- 輸入自訂名稱及描述後儲存
+
+![](https://img.mediatek.com/1500/mtk.linkit/mcs-resources/zh-TW/2.8.5/LinkIt_Connect/img_linkitconnect7681_15.png)
+
+- 點選進入裝置後即可透過手機或 MCS 網頁來控制晶片上的 GPIO 腳位訊號
+
+![](https://img.mediatek.com/1500/mtk.linkit/mcs-resources/zh-TW/2.8.5/LinkIt_Connect/img_linkitconnect7681_22.png)
