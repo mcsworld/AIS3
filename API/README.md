@@ -27,7 +27,8 @@ if r:
 PHP API example
 
 ```php
-<?php                                                                                                                    require_once('mcs.php');
+<?php
+    require_once('mcs.php');
 
     // Get access token from MCS
     $app_key = 'YOUR_APP_KEY';
