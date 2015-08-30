@@ -82,6 +82,16 @@
 
 ![](https://img.mediatek.com/1500/mtk.linkit/mcs-resources/zh-TW/2.8.5/LinkIt_Connect/img_linkitconnect7681_15.png)
 
-- 點選進入裝置後即可透過手機或 MCS 網頁來控制晶片上的 GPIO 腳位訊號
+- 點選進入裝置後即可透過手機或 MCS 網頁以及 API 來控制晶片上的 GPIO 腳位訊號
 
 ![](https://img.mediatek.com/1500/mtk.linkit/mcs-resources/zh-TW/2.8.5/LinkIt_Connect/img_linkitconnect7681_22.png)
+
+
+---
+
+##### 6. 透過腳本修改晶片所使用的無線網路訊號
+
+- 由於並非所有學員都有 Android Phone，如果在課程結束後，想要使用自己的無線網路熱點讓晶片連上網路，可以使用提供的 `set_ap.py` 進行晶片上設定的修改
+- 將晶片以 Micro-USB 傳輸線連接上電腦後，透過 `set_ap.py` 來設定目標無線網路的 SSID 以及密碼
+- 例如 WiFi 名稱為 `Free Wifi`，密碼為 `12345678`，則輸入 `python set_ap.py -s "Free WiFi" -p "12345678"` ，執行後將會重新修改晶片設定並嘗試連接至目標無線網路
+- 注意: 若無線網路名稱含有中文，可能無法正常連線
