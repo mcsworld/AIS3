@@ -11,7 +11,6 @@ email = "YOUR_EMAIL"
 password = "YOUR_PASSWORD"
 
 deviceId = "DEVICE_ID"
-deviceKey = "DEVICE_KEY"
 
 # Get user token from MCS
 r = get_user_token(app_key, app_secret, email, password)
