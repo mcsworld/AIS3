@@ -37,12 +37,15 @@
 ![](http://i.imgur.com/JdAGs4J.png)
 
 - 等待韌體更新完畢，若過程中出現 Enter Recovery Mode Failed 相關訊息，請手動按一下晶片上的重置按鈕，再按下鍵盤上的任意鍵繼續執行
+
 ![](http://i.imgur.com/hpMdBDo.png)
 
 #### 5. 進行 Smart Connection
 - 此步驟會透過 Android 手機將實體晶片與前面在 MCS 所建立的原型連接在一起，讓我們能夠直接透過網路來控制晶片動作
+
 - 透過掃描 QRCode 安裝 MCS 手機 APP
 ![](https://img.mediatek.com/1500/mtk.linkit/mcs-resources/zh-TW/2.8.5/LinkIt_Connect/img_linkitconnect7681_00.png)
+
 - 或是從 Google Play 搜尋 [MediaTek Cloud Sandbox](https://play.google.com/store/apps/details?id=com.mediatek.iotcloud&hl=zh_TW) 安裝
 ![](http://i.imgur.com/LT9HwNW.png)
 
