@@ -47,7 +47,9 @@
 ![](https://img.mediatek.com/1500/mtk.linkit/mcs-resources/zh-TW/2.8.5/LinkIt_Connect/img_linkitconnect7681_00.png)
 
 - 或是從 Google Play 搜尋 [MediaTek Cloud Sandbox](https://play.google.com/store/apps/details?id=com.mediatek.iotcloud&hl=zh_TW) 安裝
+
 ![](http://i.imgur.com/LT9HwNW.png)
 
 - 開啟 APP 登入後，點選下方的新增按鈕
+
 ![](https://img.mediatek.com/1500/mtk.linkit/mcs-resources/zh-TW/2.8.5/LinkIt_Connect/img_linkitconnect7681_09.png)
