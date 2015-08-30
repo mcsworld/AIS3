@@ -2,7 +2,7 @@
 
 Python API example
 
-```
+```python
 from pymcs import *
 
 app_key = "YOUR_APP_KEY"
