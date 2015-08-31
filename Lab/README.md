@@ -2,7 +2,7 @@
 
 #### 讓 MT7681 連上 [MediaTek Cloud Sandbox](https://mcs.mediatek.com/oauth/zh-TW/signup)
 ##### 1. 註冊 MCS 帳號
-- 前往 [MCS 註冊頁面](https://mcs.mediatek.com/oauth/zh-TW/signup) 申請一個帳號並登入
+- 前往 [MCS 註冊頁面](https://mcs.mediatek.com/oauth/zh-TW/signup) 申請一個帳號並登入，需要進行 e-mail 驗證，請填寫可用的信箱帳號
 
 ---
 
