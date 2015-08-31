@@ -20,7 +20,7 @@ if r:
     # Control GPIO
     send_data(access_token, deviceId, "GPIO_00", 1)
     time.sleep(1)
-    send_data(access_token, deviceId, "GPIO_01", 0)
+    send_data(access_token, deviceId, "GPIO_00", 0)
 ```
 
 PHP API example
@@ -39,5 +39,5 @@ PHP API example
     // Control GPIO port
     send_data($access_token, $device_id, 'GPIO_00', 1);
     Sleep(1);
-    send_data($access_token, $device_id, 'GPIO_01', 0);
+    send_data($access_token, $device_id, 'GPIO_00', 0);
 ```
