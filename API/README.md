@@ -36,7 +36,7 @@ PHP API example
     $password = 'PASSWORD';
     $device_id = 'DEVICE_ID';
     
-    $access_token = get_access_token($app_key, $app_secret, $email, $password);
+    $access_token = get_user_token($app_key, $app_secret, $email, $password);
     
     // Control GPIO port
     send_data($access_token, $device_id, 'GPIO_00', 1);
