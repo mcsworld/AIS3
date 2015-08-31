@@ -4,6 +4,7 @@ Python API example
 
 ```python
 from pymcs import *
+import time
 
 app_key = "YOUR_APP_KEY"
 app_secret = "YOUR_APP_SECRET"
