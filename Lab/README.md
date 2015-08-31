@@ -39,7 +39,9 @@
 
 - 若找不到 COM 裝置，請下載並安裝作業系統對應版本的 [VCP Driver](http://www.ftdichip.com/Drivers/VCP.htm)
 
-- 執行提供的 mt7681_uploader.py 或 mt7681_uploader.exe，依照上個步驟所找到的 COM 編號，輸入對應參數，例如 `mt7681_uploader.exe -c COM3 -f MT7681_sta_header.bin` 來更新韌體
+- 執行提供的 mt7681_uploader.py 或 mt7681_uploader.exe (位於 Files 資料夾)，依照上個步驟所找到的 COM 編號，輸入對應參數，例如 `mt7681_uploader.exe -c COM3 -f MT7681_sta_header.bin` 來更新韌體
+或是以 python 執行 `python mt7681_uploader.py -c COM3 -f MT7681_sta_header.bin`
+
 ![](http://i.imgur.com/JdAGs4J.png)
 
 - 等待韌體更新完畢，若過程中出現 Enter Recovery Mode Failed 相關訊息，請手動按一下晶片上的重置按鈕，再按下鍵盤上的任意鍵繼續執行
@@ -70,6 +72,7 @@
 ![](https://img.mediatek.com/1500/mtk.linkit/mcs-resources/zh-TW/2.8.5/LinkIt_Connect/img_linkitconnect7681_10.png)
 
 - 輸入無線網路的 SSID 和密碼後點選開始。正常情況下，SSID 會自動帶入手機所連線至的無線網路
+- 在 AIS3 教室請輸入 `AIS3` 及 `ais3{2015}`
 
 ![](https://img.mediatek.com/1500/mtk.linkit/mcs-resources/zh-TW/2.8.5/LinkIt_Connect/img_linkitconnect7681_11.png)
 
@@ -95,9 +98,10 @@
 
 ##### 附錄. 透過腳本修改晶片所使用的無線網路訊號
 
-- 由於並非所有學員都有 Android 手機，如果在課程結束後，想要使用自己的無線網路熱點讓晶片連上網路，可以使用提供的 `set_ap.py` 進行晶片上 WiFi 設定的修改
-- 將晶片以 Micro-USB 傳輸線連接上電腦後，透過 `set_ap.py` 來設定目標無線網路的 SSID 以及密碼
-- 例如想要讓晶片連接的 WiFi 名稱為 `Free Wifi`，密碼為 `12345678`，則輸入 `python set_ap.py -s "Free WiFi" -p "12345678"` ，執行後將會重新修改晶片設定並嘗試連接至目標無線網路
+- 由於並非所有學員都有 Android 手機，如果在課程結束後，想要使用自己的無線網路熱點讓晶片連上網路，可以使用提供的 `set_ap.exe` 或 `set_ap.py` 進行晶片上 WiFi 設定的修改
+- 將晶片以 Micro-USB 傳輸線連接上電腦後，透過 `set_ap.exe` 來設定目標無線網路的 SSID 以及密碼
+- 例如想要讓晶片連接的 WiFi 名稱為 `Free Wifi`，密碼為 `12345678`，則輸入 `set_ap.exe -c COM3 -s "Free WiFi" -p "12345678"` ，執行後將會重新修改晶片設定並嘗試連接至目標無線網路
+- 或是使用 python 執行 `python set_ap.py -c COM3 -s "Free WiFi" -p "12345678"`
 - 注意: 若無線網路名稱含有中文，可能無法正常連線
 
 ##### 附錄2. 透過腳本重置晶片設定
