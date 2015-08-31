@@ -1,18 +1,18 @@
 # AIS3 Lab
 
-#### 讓 MT7681 連上 [MediaTek Cloud Sandbox](https://mcs.mediatek.com/oauth/zh-TW/signup)
+#### 讓 MT7681 連上 [MediaTek Cloud Sandbox](https://mcs.mediatek.com/oauth/zh-TW/signup) ，並使用網路控制晶片
 ##### 1. 註冊 MCS 帳號
 - 前往 [MCS 註冊頁面](https://mcs.mediatek.com/oauth/zh-TW/signup) 申請一個帳號並登入，需要進行 e-mail 驗證，請填寫可用的信箱帳號
 
 ---
 
 ##### 2. 建立產品原型
-- 點擊畫面上方的 開發
+- 點擊畫面上方的`開發`
 - 在產品原型清單頁面中，點擊創建按鈕來新增一個新的產品原型
 
 ![](https://img.mediatek.com/1500/mtk.linkit/mcs-resources/zh-TW/2.8.5/LinkIt_Connect/img_linkitconnect7681_01.png)
 
-- 輸入自訂產品原型名稱，版本，並選擇產業別。硬體平台請選擇 MT7681，之後點擊儲存按鈕
+- 輸入自訂產品原型名稱，版本，並選擇產業別。硬體平台請選擇 `MT7681`，之後點擊儲存按鈕
 ![](https://img.mediatek.com/1500/mtk.linkit/mcs-resources/zh-TW/2.8.5/LinkIt_Connect/img_linkitconnect7681_02.png)
 
 ---
@@ -24,17 +24,17 @@
 - 點擊資料通道分頁，並點擊新增按鈕。
 ![](https://img.mediatek.com/1500/mtk.linkit/mcs-resources/zh-TW/2.8.5/LinkIt_Connect/img_linkitconnect7681_05.png)
 
-- 建立資料通道，資料通道 ID 請輸入 `GPIO_00`，資料通道名稱輸入 `GPIO 00`，並且選擇 GPIO 資料型態並儲存
+- 建立資料通道，資料通道名稱輸入 `GPIO 00`，資料通道 ID 請輸入 `GPIO_00`，並且選擇 GPIO 資料型態並儲存
 ![](https://img.mediatek.com/1500/mtk.linkit/mcs-resources/zh-TW/2.8.5/LinkIt_Connect/img_linkitconnect7681_06.png)
 
-- 接著以同樣步驟新增第二個資料通道，這次資料通道 ID 請輸入 `GPIO_01`，資料通道名稱輸入 `GPIO 01` ，選擇 GPIO 資料型態並儲存
+- 接著以同樣步驟新增第二個資料通道，這次資料通道名稱輸入 `GPIO 01` ，資料通道 ID 請輸入 `GPIO_01`，選擇 GPIO 資料型態並儲存
 
 ---
 
 ##### 4. 更新晶片上的韌體
 - 將晶片以 Micro-USB 傳輸線連接至電腦
  
-- 開啟我的電腦->右鍵內容->裝置管理員，找到 COM 連接埠的編號 (例如下圖為 COM3)
+- Windows 系統使用者: 開啟我的電腦->右鍵內容->裝置管理員，找到 COM 連接埠的編號 (例如下圖為 COM3)
 ![](http://i.imgur.com/e3gd0kW.png)
 
 若找不到，請下載並安裝 [VCP Driver](http://www.ftdichip.com/Drivers/VCP.htm)
