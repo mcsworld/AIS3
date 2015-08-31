@@ -79,11 +79,3 @@ function send_data($access_token, $device_id, $chn_id, $value)
 	}
 	return true;
 }
-
-function get_access_token($app_key, $app_secret, $email, $password)
-{
-	$r = get_user_token($app_key, $app_secret, $email, $password);
-	return $r->access_token;
-}
-
-
