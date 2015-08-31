@@ -2,8 +2,9 @@
 
 #### 讓 MT7681 連上 [MediaTek Cloud Sandbox](https://mcs.mediatek.com/oauth/zh-TW/signup) ，並透過網際網路控制晶片
 ##### 1. 註冊 MCS 帳號
-- 前往 [MCS 註冊頁面](https://mcs.mediatek.com/oauth/zh-TW/signup) 申請一個帳號並登入，需要進行 e-mail 驗證，請填寫可用的信箱帳號
+- 前往 [MCS 註冊頁面](https://mcs.mediatek.com/oauth/en/signup) 申請一個帳號並登入，需要進行 e-mail 驗證，請填寫可用的信箱帳號
 
+- 注意，目前系統有些問題，註冊時請使用英文介面，否則會收不到註冊信，登入後即可切到中文介面
 ---
 
 ##### 2. 建立產品原型，有了產品原型才能將雲端上的設定與實際晶片連結在一起
