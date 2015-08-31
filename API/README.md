@@ -24,11 +24,13 @@ r = get_user_token(app_key, app_secret, email, password)
 if r:
     access_token = r['access_token']
 
-    # Control GPIO
+    # Control GPIO_00
     send_data(access_token, device_id, "GPIO_00", 1)
     time.sleep(1)
     send_data(access_token, device_id, "GPIO_00", 0)
 ```
+
+--- 
 
 PHP API example
 
@@ -45,7 +47,7 @@ PHP API example
     
     $access_token = get_user_token($app_key, $app_secret, $email, $password);
     
-    // Control GPIO port
+    // Control GPIO_00
     send_data($access_token, $device_id, 'GPIO_00', 1);
     Sleep(1);
     send_data($access_token, $device_id, 'GPIO_00', 0);
