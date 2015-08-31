@@ -6,8 +6,8 @@
 
 ---
 
-##### 2. 建立產品原型
-- 點擊畫面上方的`開發`
+##### 2. 建立產品原型，有了產品原型才能將雲端上的設定與實際晶片連結在一起
+- 登入後點擊畫面上方的 `開發`
 - 在產品原型清單頁面中，點擊創建按鈕來新增一個新的產品原型
 
 ![](https://img.mediatek.com/1500/mtk.linkit/mcs-resources/zh-TW/2.8.5/LinkIt_Connect/img_linkitconnect7681_01.png)
@@ -17,7 +17,7 @@
 
 ---
 
-##### 3. 為產品原型建立資料通道
+##### 3. 為產品原型建立資料通道，資料通道是用來連結控制晶片上的腳位訊號
 - 點擊剛新建好的產品原型下方的詳情按鈕
 ![](https://img.mediatek.com/1500/mtk.linkit/mcs-resources/zh-TW/2.8.5/LinkIt_Connect/img_linkitconnect7681_03.png)
 
@@ -37,7 +37,7 @@
 - Windows 系統使用者: 開啟我的電腦->右鍵內容->裝置管理員，找到 COM 連接埠的編號 (例如下圖為 COM3)
 ![](http://i.imgur.com/e3gd0kW.png)
 
-若找不到，請下載並安裝 [VCP Driver](http://www.ftdichip.com/Drivers/VCP.htm)
+- 若找不到 COM 裝置，請下載並安裝作業系統對應版本的 [VCP Driver](http://www.ftdichip.com/Drivers/VCP.htm)
 
 - 執行提供的 mt7681_uploader.py 或 mt7681_uploader.exe，依照上個步驟所找到的 COM 編號，輸入對應參數，例如 `mt7681_uploader.exe -c COM3 -f MT7681_sta_header.bin` 來更新韌體
 ![](http://i.imgur.com/JdAGs4J.png)
@@ -51,7 +51,10 @@
 #### 5. 進行 Smart Connection
 - 此步驟會透過 Android 手機將實體晶片與前面在 MCS 所建立的原型連接在一起，讓我們能夠直接透過網路來控制晶片動作
 
+- 此步驟比較可能會遇到問題，可請助教群協助
+
 - 透過掃描 QRCode 安裝 MCS 手機 APP
+
 ![](https://img.mediatek.com/1500/mtk.linkit/mcs-resources/zh-TW/2.8.5/LinkIt_Connect/img_linkitconnect7681_00.png)
 
 - 或是從 Google Play 搜尋 [MediaTek Cloud Sandbox](https://play.google.com/store/apps/details?id=com.mediatek.iotcloud&hl=zh_TW) 安裝
