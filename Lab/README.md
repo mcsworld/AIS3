@@ -101,3 +101,9 @@
 - 將晶片以 Micro-USB 傳輸線連接上電腦後，透過 `set_ap.py` 來設定目標無線網路的 SSID 以及密碼
 - 例如想要讓晶片連接的 WiFi 名稱為 `Free Wifi`，密碼為 `12345678`，則輸入 `python set_ap.py -s "Free WiFi" -p "12345678"` ，執行後將會重新修改晶片設定並嘗試連接至目標無線網路
 - 注意: 若無線網路名稱含有中文，可能無法正常連線
+
+##### 附錄2. 透過腳本重置晶片設定
+
+- 若發生問題需要重置晶片上的所有設定，可以透過 mt7681_uploader.exe 重置
+- 執行 `mt7681_uploader.exe -c COM3 --default` 即可重置所有設定
+- 注意: 重置設定後必須重新使用 Android App 進行 Smart Connection 才能讓晶片重新連上網路
