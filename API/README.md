@@ -18,9 +18,11 @@
 
 ![](http://i.imgur.com/uqG4MSR.png)
 
+完成後便可透過 API 登入帳號並控制裝置
+
 ---
 
-Python API example
+#### Python API example
 
 Python API 需要安裝 requests module
 ```bash
@@ -52,7 +54,7 @@ if r:
 
 --- 
 
-PHP API example
+#### PHP API example
 
 ```php
 <?php
