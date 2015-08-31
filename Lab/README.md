@@ -44,7 +44,7 @@
 ![](http://i.imgur.com/JdAGs4J.png)
 ![](http://i.imgur.com/hpMdBDo.png)
 
-
+---
 
 - OSX 系統使用者: 於 Terminal 執行 `ls /dev/tty.usbserial*`，應該可以找到對應的 tty name
 - 以 python 執行 `python mt7681_uploader.py -c /dev/tty.usbserial-DB0078CI -f MT7681_sta_header.bin` 來更新韌體
