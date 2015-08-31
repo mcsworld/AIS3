@@ -2,9 +2,11 @@
 
 Python API example
 
-`Python API 需要安裝 requests module`
+Python API 需要安裝 requests module
+```bash
 OSX / Linux: pip install requests
 Windows: python -m pip install requests 
+```
 
 ```python
 from pymcs import *
