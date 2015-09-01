@@ -77,7 +77,7 @@
 ![](https://img.mediatek.com/1500/mtk.linkit/mcs-resources/zh-TW/2.8.5/LinkIt_Connect/img_linkitconnect7681_10.png)
 
 - 輸入無線網路的 SSID 和密碼後點選開始。正常情況下，SSID 會自動帶入手機所連線至的無線網路
-- 在 AIS3 教室請輸入 `AIS3` 及 `ais3{2015}`
+- 在 AIS3 教室請輸入 `AIS3-2G` 及 `ais3{2015}`
 
 ![](https://img.mediatek.com/1500/mtk.linkit/mcs-resources/zh-TW/2.8.5/LinkIt_Connect/img_linkitconnect7681_11.png)
 
