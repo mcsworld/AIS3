@@ -9,7 +9,7 @@ from requests.auth import HTTPBasicAuth
 def get_user_token(app_key, app_secret, email, password):
 	url = "https://mcs.mediatek.com/oauth/login/thirdpart"
 	data = {"email": email,
-			"password": password
+		"password": password
 	}
 
 	r = requests.post(url, auth=(app_key, app_secret), data=data)
