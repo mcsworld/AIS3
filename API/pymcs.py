@@ -51,5 +51,37 @@ def send_data(access_token, deviceId, chn_id, value):
 		return False
 	return True
 
+def send_data_from_device(access_token, deviceId, device_key, chn_id, value):  
+	url = "https://api.mediatek.com/mcs/v2/devices/%s/datapoints" % deviceId
+	headers = {"deviceKey": device_key,
+			   "Content-Type": "application/json"
+	}
+	data = {"datapoints": [{"dataChnId": chn_id,
+	                        "values": {"value": value}}]
+	}
 
+	r = requests.post(url, headers=headers, data=json.dumps(data))
+	response = json.loads(r.text)
+
+	if response['code'] != 200:
+		print "[!] Send data from device failed! MCS response: %s" % response['message']
+		return False
+	return True
+
+def send_gps_from_device(access_token, deviceId, device_key, chn_id, value):  
+	url = "https://api.mediatek.com/mcs/v2/devices/%s/datapoints" % deviceId
+	headers = {"deviceKey": device_key,
+			   "Content-Type": "application/json"
+	}
+	data = {"datapoints": [{"dataChnId": chn_id,
+	                        "values": value}]
+	}
+
+	r = requests.post(url, headers=headers, data=json.dumps(data))
+	response = json.loads(r.text)
+
+	if response['code'] != 200:
+		print "[!] Send gps data from device failed! MCS response: %s" % response['message']
+		return False
+	return True
 
