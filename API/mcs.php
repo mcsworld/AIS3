@@ -15,8 +15,6 @@ function get_user_token($app_key, $app_secret, $email, $password)
 	curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data)); 
 	curl_setopt($ch, CURLOPT_USERPWD, $app_key . ":" . $app_secret);
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-	curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
-	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 	curl_setopt($ch, CURLOPT_IPRESOLVE, CURL_IPRESOLVE_V4);
 	$response = curl_exec($ch); 
 	curl_close($ch);
@@ -46,8 +44,6 @@ function refresh_user_token($app_key, $app_secret, $token)
 	curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data)); 
 	curl_setopt($ch, CURLOPT_USERPWD, $app_key . ":" . $app_secret);
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-	curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
-	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 	curl_setopt($ch, CURLOPT_IPRESOLVE, CURL_IPRESOLVE_V4);
 	$response = curl_exec($ch); 
 	curl_close($ch);
@@ -68,8 +64,6 @@ function send_data($access_token, $device_id, $chn_id, $value)
 	curl_setopt($ch, CURLOPT_POSTFIELDS, $data); 
 	curl_setopt($ch, CURLOPT_HTTPHEADER, $header);	
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-	curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
-	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 	curl_setopt($ch, CURLOPT_IPRESOLVE, CURL_IPRESOLVE_V4);
 	$response = curl_exec($ch); 
 	curl_close($ch);
